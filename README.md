@@ -36,4 +36,4 @@ Here are some upcoming features planned for future updates :
 - ➔ **Multi-Block Support:** Extending the padding mechanism to handle arbitrarily long messages (beyond the single 512-bit block limitation)
 - ➔ **Interactive CLI / TUI:** Building a cleaner terminal interface to easily hash files or custom inputs on the fly
 - ➔ **Graphical Interface (GUI):** A lightweight desktop companion app to visualize live hashing and byte padding steps
-- - ➔ **File-Based Hashing:** Adding support for hashing entire local files via file stream inputs rather than relying solely on terminal arguments
+- ➔ **File-Based Hashing:** Adding support for hashing entire local files via file stream inputs rather than relying solely on terminal arguments

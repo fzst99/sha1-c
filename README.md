@@ -5,22 +5,21 @@ A lightweight, standalone C implementation of the **SHA-1 (Secure Hash Algorithm
 ## Technical Overview
 This project focuses on low-level binary operations, bitwise manipulations, and memory layout techniques according to the RFC 3174 / FIPS PUB 180-1 specification.
 
-* **Language:** Pure C (C99 compliant)
-* **Scope:** Single-block message padding & hash computation (inputs up to 55 bytes)
-* **Core Logic:** Implementation of logical functions ($f_0 \dots f_{79}$), bitwise left rotations, and standard SHA-1 constant schedules ($K_0 \dots K_3$)
+- **Language:** Pure C (C99 compliant)
+- **Scope:** Single-block message padding & hash computation (inputs up to 55 bytes)
+- **Core Logic:** Implementation of logical functions ($f_0 \dots f_{79}$), bitwise left rotations, and standard SHA-1 constant schedules ($K_0 \dots K_3$)
 
-##  Building & Running
+## Building & Running
 
 ### Prerequisites
-* GCC or Clang compiler
-* Standard C C-runtime library
+- GCC or Clang compiler
+- Standard C C-runtime library
 
 ### Compilation
 ```bash
-gcc -O2 main.c -o sha1_test
-
-## 🗺️ Roadmap & Coming Soon
-Here are the upcoming features planned for future updates:
-- [ ] **Multi-Block Support:** Extending the padding mechanism to handle arbitrarily long messages (beyond the single 512-bit block limitation).
-- [ ] **Interactive CLI / TUI:** Building a cleaner terminal interface to easily hash files or custom inputs on the fly.
-- [ ] **Graphical Interface (GUI):** A lightweight desktop companion app (e.g., using C/Win32 or cross-platform tools) to visualize live hashing and byte padding steps.
+gcc main.c -o main.exe
+```
+### Usage
+```bash
+main.exe STRING
+```

@@ -18,3 +18,9 @@ This project focuses on low-level binary operations, bitwise manipulations, and 
 ### Compilation
 ```bash
 gcc -O2 main.c -o sha1_test
+
+## 🗺️ Roadmap & Coming Soon
+Here are the upcoming features planned for future updates:
+- [ ] **Multi-Block Support:** Extending the padding mechanism to handle arbitrarily long messages (beyond the single 512-bit block limitation).
+- [ ] **Interactive CLI / TUI:** Building a cleaner terminal interface to easily hash files or custom inputs on the fly.
+- [ ] **Graphical Interface (GUI):** A lightweight desktop companion app (e.g., using C/Win32 or cross-platform tools) to visualize live hashing and byte padding steps.

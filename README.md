@@ -23,3 +23,17 @@ gcc main.c -o main.exe
 ```bash
 main.exe STRING
 ```
+### NIST test vector Verification
+To verify that your build matches the correct implementation, run the following test vector command :
+| Target (Input) | Expected Result |
+| :--- | :--- |
+| `"abc"` | `a9993e364706816aba3e25717850c26c9cd0d89d` |
+| `""` *(Empty String)* | `da39a3ee5e6b4b0d3255bfef95601890afd80709` |
+
+## Coming Soon
+Here are some upcoming features planned for future updates : 
+
+- ➔ **Multi-Block Support:** Extending the padding mechanism to handle arbitrarily long messages (beyond the single 512-bit block limitation)
+- ➔ **Interactive CLI / TUI:** Building a cleaner terminal interface to easily hash files or custom inputs on the fly
+- ➔ **Graphical Interface (GUI):** A lightweight desktop companion app to visualize live hashing and byte padding steps
+- - ➔ **File-Based Hashing:** Adding support for hashing entire local files via file stream inputs rather than relying solely on terminal arguments
